@@ -1,10 +1,3 @@
-$(function(){
-    $('.custom-modal').click(function(e){
-      e.preventDefault();
-      result(); // Call the result function to calculate the score and display the modal
-    });
-});
-
 function result() {
     var score = 0; // Reset the score for each quiz attempt
     var Grade = ' ';
@@ -21,7 +14,12 @@ function result() {
     var Q4 = document.quiz.Q4.value;
     var Q5 = document.quiz.Q5.value;
 
-    //  (Code for checking answers and updating the score)
+    // Code for checking answers and updating the score
+    if (Q1 === Q1_ans) {
+        score += 2;
+    }
+
+    // Repeat the above for Q2, Q3, Q4, Q5
 
     switch (score) {
         case 10:
