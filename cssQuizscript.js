@@ -21,7 +21,7 @@ function result() {
     var Q4 = document.quiz.Q4.value;
     var Q5 = document.quiz.Q5.value;
 
-    // ... (Your existing code for checking answers and updating the score)
+    //  (Code for checking answers and updating the score)
 
     switch (score) {
         case 10:
